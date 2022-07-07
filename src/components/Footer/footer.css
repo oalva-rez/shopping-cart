@@ -1,10 +1,12 @@
 .footer-rights {
   padding: 10px;
+  display: grid;
+  place-content: center;
   text-align: center;
   background-color: black;
   color: rgb(211, 211, 211);
   font-size: 0.8rem;
-  height: 100%;
+  height: 30px;
 }
 .footer-info {
   display: flex;

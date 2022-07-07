@@ -38,6 +38,9 @@
 .bold {
   font-weight: 600;
 }
+.cart-desc {
+  max-width: 500px;
+}
 .remove-button {
   background: #ff7d73;
   color: #fff;
@@ -45,7 +48,4 @@
   padding: 5px 10px;
   border-radius: 50%;
   cursor: pointer;
-}
-.cart {
-  min-height: 80vh;
 }
