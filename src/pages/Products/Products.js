@@ -7,8 +7,7 @@ export default function Catalog(props) {
       <div className="product" key={product.id}>
         <Link to={`/products/${product.id}`}>
           <img src={product.image} alt={product.name} />
-          <h3>{product.name}</h3>
-          <p>{product.description}</p>
+          <h3>{product.title}</h3>
           <p>${product.price}</p>
         </Link>
       </div>

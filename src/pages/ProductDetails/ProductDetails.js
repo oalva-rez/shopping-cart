@@ -9,7 +9,7 @@ export default function ProductDetails(props) {
   const [quantity, setQuantity] = useState(1);
   return (
     <div className="content">
-      <div className="product">
+      <div className="product-main">
         <div className="image">
           <img src={product[0].image} alt="" />
         </div>
@@ -23,7 +23,7 @@ export default function ProductDetails(props) {
             quidem mollitia eligendi porro eos voluptates iure incidunt,
             laudantium sed harum omnis quasi?
           </p>
-          <div className="qty">
+          <div className="qty-container">
             <div className="qty">
               <button
                 className="qty-count qty-count--minus"
@@ -34,15 +34,7 @@ export default function ProductDetails(props) {
               >
                 -
               </button>
-              <input
-                className="product-qty"
-                type="number"
-                name="product-qty"
-                min="0"
-                max="10"
-                value={quantity}
-                readOnly
-              />
+              <div className="qty-num">{quantity}</div>
               <button
                 className="qty-count qty-count--add"
                 data-action="add"
@@ -54,6 +46,7 @@ export default function ProductDetails(props) {
               </button>
             </div>
             <button
+              className="add-to-cart"
               onClick={() => {
                 props.updateCart(product[0], quantity);
               }}

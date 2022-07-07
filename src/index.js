@@ -5,6 +5,9 @@ import "./components/Header/header.css";
 import "./components/Hero/hero.css";
 import "./components/Categories/categories.css";
 import "./components/Footer/footer.css";
+import "./pages/Products/products.css";
+import "./pages/ProductDetails/productdetails.css";
+import "./pages/Cart/cart.css";
 
 import App from "./App";
 
