@@ -24,7 +24,7 @@ p {
 .product h3 {
   font-weight: 400;
   font-size: 1rem;
-  height: 40px;
+  min-height: 40px;
 }
 .product p {
   margin-top: 7px;

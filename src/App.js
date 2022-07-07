@@ -11,13 +11,11 @@ import data from "./components/data";
 function App() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    async function fetchProducts() {
-      //   const res = await fetch(data);
-      //     const datares = await res.json();
-      setProducts(data);
-    }
-    fetchProducts();
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((json) => setProducts(json));
   }, []);
+
   const [cart, setCart] = useState([]);
   function updateCart(item, quantity) {
     setCart((prev) => [...prev, { item, quantity }]);
