@@ -1,0 +1,23 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1700px;
+  gap: 2rem;
+}
+.categories > * {
+  position: relative;
+}
+.categories h3 {
+  position: absolute;
+  font-weight: normal;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2rem;
+}

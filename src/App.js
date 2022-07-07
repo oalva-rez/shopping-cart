@@ -1,7 +1,8 @@
 import { React, useState, useEffect } from "react";
 import Products from "./pages/Products";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetails from "./pages/ProductDetails";
@@ -17,17 +18,29 @@ function App() {
     }
     fetchProducts();
   }, []);
-
+  const [cart, setCart] = useState([]);
+  function updateCart(item, quantity) {
+    setCart((prev) => [...prev, { item, quantity }]);
+  }
+  function deleteItem(id) {
+    setCart((prev) => prev.filter((item) => item.item.id !== id));
+  }
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Header cart={cart} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products products={products} />} />
           <Route
             path="/products/:id"
-            element={<ProductDetails products={products} />}
+            element={
+              <ProductDetails products={products} updateCart={updateCart} />
+            }
+          />
+          <Route
+            path="/cart"
+            element={<Cart cart={cart} deleteItem={deleteItem} />}
           />
         </Routes>
         <Footer />

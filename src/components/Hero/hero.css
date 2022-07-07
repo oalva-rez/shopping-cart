@@ -1,0 +1,37 @@
+.hero-container {
+  display: flex;
+  width: 100%;
+  height: clamp(60vh, 50vh, 50vh);
+}
+.hero-container > * {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wall-hero {
+  background-image: url("../../assets/wall-hero.png");
+  display: grid;
+  place-content: center;
+}
+
+.wall-hero > * {
+  width: 80%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+.wall-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+.wall-hero button {
+  width: 200px;
+  height: 30px;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}

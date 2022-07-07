@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-info">
-        <div>
+        <div className="footer-about">
           <h3>ABOUT THE SHOP</h3>
           <p>
             After being frustrated with being unable to find fitted high quality
@@ -12,7 +12,7 @@ export default function Footer() {
             hands.
           </p>
         </div>
-        <div>
+        <div className="footer-help">
           <h3>HELP</h3>
           <ul>
             <li>FAQ</li>
@@ -26,7 +26,7 @@ export default function Footer() {
             <li>International Shipping Policy</li>
           </ul>
         </div>
-        <div>
+        <div className="footer-newsletter">
           <h3>NEWSLETTER</h3>
           <p>
             Subscribe to receive updates, access to exclusive deals, and more.
@@ -35,7 +35,7 @@ export default function Footer() {
           <button>SUBSCRIBE</button>
         </div>
       </div>
-      <p>Copyright &#169; Ozkar Alvarez</p>
+      <p className="footer-rights">Copyright &#169; Ozkar Alvarez</p>
     </footer>
   );
 }

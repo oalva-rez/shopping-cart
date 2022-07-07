@@ -1,0 +1,57 @@
+.footer-rights {
+  margin: 20px 0 0 0;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: rgb(211, 211, 211);
+  font-size: 0.8rem;
+  height: 100%;
+}
+.footer-info {
+  display: flex;
+}
+.footer-info > * {
+  flex: 1;
+  margin: 0 10px;
+}
+.footer-about p {
+  width: 70%;
+}
+.footer-help ul {
+  padding: 0;
+}
+.footer-help li {
+  list-style: none;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.footer-newsletter p {
+  width: 60%;
+}
+.footer-newsletter input {
+  width: 40%;
+  height: 40px;
+  font-size: 1rem;
+  padding: 3px 10px;
+  border-radius: 0;
+}
+.footer-newsletter button {
+  width: 30%;
+  height: 40px;
+  font-size: 1rem;
+  padding: 3px 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+}

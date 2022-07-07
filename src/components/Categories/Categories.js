@@ -1,7 +1,7 @@
 import React from "react";
-import men from "../assets/men.png";
-import women from "../assets/women.png";
-import athletics from "../assets/athletics.png";
+import men from "../../assets/men.png";
+import women from "../../assets/women.png";
+import athletics from "../../assets/athletics.png";
 
 export default function Categories() {
   return (
