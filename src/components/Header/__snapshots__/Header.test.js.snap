@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <a
+      data-testid="home-link"
+      href="/"
+    >
+      <h1>
+        Sensuro
+      </h1>
+    </a>
+    <div
+      class="header--btns"
+    >
+      <img
+        alt="account"
+        src="account.png"
+      />
+      <img
+        alt="search"
+        src="search.png"
+      />
+      <a
+        class="cart-container"
+        data-testid="cart-link"
+        href="/cart"
+      >
+        <img
+          alt="cart"
+          src="cart.png"
+        />
+        <div
+          class="cart-count"
+        >
+          2
+        </div>
+      </a>
+    </div>
+  </header>
+</div>
+`;

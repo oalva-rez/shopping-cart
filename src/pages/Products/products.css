@@ -1,8 +1,12 @@
+.products-heading {
+  text-align: center;
+}
 .items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
-  margin: 20px 50px;
+  margin: 40px 50px;
+  gap: 2rem;
 }
 .items img {
   height: 142px;
@@ -28,4 +32,25 @@ p {
 }
 .product p {
   margin-top: 7px;
+}
+
+.items {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1800px) {
+  .products {
+    width: 70vw;
+    margin: auto;
+  }
 }

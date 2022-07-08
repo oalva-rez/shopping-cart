@@ -38,6 +38,7 @@
 
 .footer-newsletter p {
   width: 60%;
+  margin-bottom: 8px;
 }
 .footer-newsletter input {
   width: 40%;
@@ -55,6 +56,6 @@
   outline: none;
   background-color: black;
   color: white;
-  margin-top: 15px;
+  margin-top: 8px;
   cursor: pointer;
 }

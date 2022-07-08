@@ -6,7 +6,6 @@ import Cart from "./pages/Cart/Cart";
 import Home from "./pages/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
-import data from "./components/data";
 
 function App() {
   const [products, setProducts] = useState([]);

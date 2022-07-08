@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero matches snapshot 1`] = `
+<div>
+  <section
+    class="hero"
+  >
+    <div
+      class="hero-container"
+    >
+      <img
+        alt="woman hero"
+        src="woman-hero.png"
+      />
+      <div
+        class="wall-hero"
+      >
+        <h2>
+          MUST HAVE BASICS
+        </h2>
+        <h3>
+          Top quality clothing fabric brought to your doorstep shipped directly from the heart of Italy.
+        </h3>
+        <button>
+          Shop Now
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+`;

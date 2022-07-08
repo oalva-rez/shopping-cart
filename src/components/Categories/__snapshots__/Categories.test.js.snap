@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories matches snapshot 1`] = `
+<div>
+  <section
+    class="categories"
+  >
+    <div>
+      <img
+        alt="men"
+        src="men.png"
+      />
+      <h3>
+        Men
+      </h3>
+    </div>
+    <div>
+      <img
+        alt="women"
+        src="women.png"
+      />
+      <h3>
+        Women
+      </h3>
+    </div>
+    <div>
+      <img
+        alt="athletics"
+        src="athletics.png"
+      />
+      <h3>
+        Athletics
+      </h3>
+    </div>
+  </section>
+</div>
+`;

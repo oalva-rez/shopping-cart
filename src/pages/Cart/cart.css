@@ -49,3 +49,25 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.cart-total {
+  width: 50%;
+  margin: 30px auto;
+  display: grid;
+  justify-content: end;
+}
+.cart-total p {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.cart-total button {
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  padding: 3px 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}

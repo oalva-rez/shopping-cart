@@ -2,6 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Cart(props) {
+  function getCartTotal() {
+    let total = 0;
+    props.cart.forEach((item) => {
+      console.log(item);
+      let itemTotal = item.item.price * item.quantity;
+      total += itemTotal;
+    });
+    return parseFloat(total).toFixed(2);
+  }
+
   return props.cart.length > 0 ? (
     <div className="cart">
       <h1 className="cart-heading">Cart</h1>
@@ -21,7 +31,10 @@ export default function Cart(props) {
                   {item.item.size ? item.item.size : "One Size"}
                 </p>
                 <p>
-                  <span className="bold">Price:</span> {item.item.price} x
+                  <span className="bold">Price:</span> ${item.item.price}
+                </p>
+                <p>
+                  <span className="bold">Qty: </span>
                   {item.quantity}
                 </p>
               </div>
@@ -40,13 +53,19 @@ export default function Cart(props) {
           );
         })}
       </div>
-      <div className="cart-total"></div>
+      <div className="cart-total">
+        <p>Total: ${getCartTotal()}</p>
+        <button>Checkout</button>
+      </div>
     </div>
   ) : (
     <div className="cart-empty">
       <h1 className="cart-heading">Cart</h1>
       <h2 className="empty-msg">
-        Your cart is currently empty. <Link to="/products">keep shopping.</Link>
+        Your cart is currently empty.{" "}
+        <Link to="/products" data-testid="keep-shopping-link">
+          keep shopping.
+        </Link>
       </h2>
     </div>
   );
