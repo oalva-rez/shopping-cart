@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products should match snapshot 1`] = `
+<div>
+  <div
+    class="products"
+  >
+    <h1
+      class="products-heading"
+    >
+      All Products
+    </h1>
+    <div
+      class="items"
+    >
+      <div
+        class="product"
+      >
+        <a
+          data-testid="product-link"
+          href="/products/1"
+        >
+          <img
+            src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+          />
+          <h3>
+            Product 1
+          </h3>
+          <p>
+            $
+            10
+          </p>
+        </a>
+      </div>
+      <div
+        class="product"
+      >
+        <a
+          data-testid="product-link"
+          href="/products/2"
+        >
+          <img
+            src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+          />
+          <h3>
+            Product 2
+          </h3>
+          <p>
+            $
+            11
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

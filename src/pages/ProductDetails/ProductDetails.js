@@ -7,6 +7,7 @@ export default function ProductDetails(props) {
     props.products.filter((prod) => Number(prod.id) === Number(id))
   );
   const [quantity, setQuantity] = useState(1);
+
   return (
     <div className="content">
       <div className="product-main">

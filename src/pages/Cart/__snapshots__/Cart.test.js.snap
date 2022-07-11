@@ -155,7 +155,7 @@ exports[`Cart with items matches snapshot 1`] = `
 </div>
 `;
 
-exports[`Empty items matches snapshot 1`] = `
+exports[`Empty cart matches snapshot 1`] = `
 <div>
   <div
     class="cart-empty"

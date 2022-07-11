@@ -71,7 +71,7 @@ describe("Cart with items", () => {
   });
 });
 
-describe("Empty items", () => {
+describe("Empty cart", () => {
   it("matches snapshot", () => {
     const { container } = render(
       <MockEmptyCart deleteItem={mockDeleteItem} cart={[]} />

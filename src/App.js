@@ -14,7 +14,6 @@ function App() {
       .then((res) => res.json())
       .then((json) => setProducts(json));
   }, []);
-
   const [cart, setCart] = useState([]);
   function updateCart(item, quantity) {
     setCart((prev) => [...prev, { item, quantity }]);
