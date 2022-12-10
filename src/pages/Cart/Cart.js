@@ -5,7 +5,6 @@ export default function Cart(props) {
   function getCartTotal() {
     let total = 0;
     props.cart.forEach((item) => {
-      console.log(item);
       let itemTotal = item.item.price * item.quantity;
       total += itemTotal;
     });
